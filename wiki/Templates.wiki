@@ -20,3 +20,15 @@ First, you have to create a place to store the templates:
 {{{
 var templates = new Templates();
 }}}
+
+Next, load the compiled template (EjsCompiler):
+
+{{{
+var template = templates.find('templates/test.ejs')
+}}}
+
+Finally, render the template with data by passing an object:
+
+{{{
+var result = template.process( {title: 'hello world', description: 'render this data'} )
+}}}
