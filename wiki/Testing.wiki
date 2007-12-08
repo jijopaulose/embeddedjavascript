@@ -22,4 +22,4 @@ Tests with the default delimiters [% %]
 
 === render with left carrot ===
 
-Tests with erb-style delimiters /,% %/.
+Tests with erb-style delimiters <% %>
