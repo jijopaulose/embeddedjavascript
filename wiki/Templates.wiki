@@ -12,3 +12,11 @@ var o2 = {animals: ['tiger', 'dog', 'elephant']};
 var result1 = templates.find('templates/test.ejs').process(o1)
 var result2 = templates.find('templates/test.ejs').process(o2)
 }}}
+
+= Use =
+
+First, you have to create a place to store the templates:
+
+{{{
+var templates = new Templates();
+}}}
