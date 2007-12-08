@@ -1,0 +1,14 @@
+#summary How to use templates with ejs.
+
+= Introduction =
+
+Templates let you load ejs files that are automatically compiled and cached.  You don't have to build template strings or insert templates in the page's html.
+
+= Example =
+{{{
+var templates = new Templates()
+var o1 = {animals: ['sloth', 'bear', 'monkey']};
+var o2 = {animals: ['tiger', 'dog', 'elephant']};
+var result1 = templates.find('templates/test.ejs').process(o1)
+var result2 = templates.find('templates/test.ejs').process(o2)
+}}}
