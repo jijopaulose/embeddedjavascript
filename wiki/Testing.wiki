@@ -1,0 +1,13 @@
+#summary Instructions on how to test EJS.
+#labels Phase-QA
+
+= Introduction =
+
+EJS uses scriptaculous's testing functionality.
+
+
+= Instructions =
+
+After obtaining the trunk folder from SVN:
+  # open test/index.html
+  # On the left frame, click 'Rendering Test' or 'Templating Test' to test ejs or templates respectively.
