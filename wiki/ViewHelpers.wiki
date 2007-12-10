@@ -1,0 +1,14 @@
+#summary Summary of Ejs's view helpers.
+
+= Introduction =
+
+EJS provides view helpers for common tasks.  These helpers are very similar to those found in the Ruby On Rails framework.
+
+
+= Details =
+
+== date_tag == 
+Creates a date tag
+{{{
+View.date_tag('Installation[date]')
+}}}
