@@ -7,8 +7,14 @@ EJS provides view helpers for common tasks.  These helpers are very similar to t
 
 = Details =
 
-== date_tag == 
+== date_tag(name, value, html_options) == 
 Creates a date tag
 {{{
-View.date_tag('Installation[date]')
+View.date_tag('Installation[date]', new Date(1982, 10,20) )
+}}}
+
+== form_tag(action, html_options)  == 
+Creates a start form tag.
+{{{
+View.form_tag('/myaction',{multipart: true}) 
 }}}
