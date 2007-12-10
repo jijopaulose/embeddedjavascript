@@ -18,3 +18,14 @@ Creates a start form tag.
 {{{
 View.form_tag('/myaction',{multipart: true}) 
 }}}
+
+== end_form_tag() == 
+Creates a start form tag.
+{{{
+View.form_tag_end()
+}}}
+
+== hidden_field_tag( name,  value,  html_options) ==
+{{{
+View.hidden_field_tag('something[interesting]', 5)
+}}}
