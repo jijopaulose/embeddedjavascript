@@ -86,6 +86,13 @@ text_area_tag('task[description]', 'Here is some text.\nA new line.') =>
                           rows='4' >Here is some text.\nA new line.</textarea>"
 }}}
 === text_field_tag ===
+{{{
+text_field_tag('something[interesting]', 5) => 
+               "<input id='something[interesting]' 
+                       value='5' 
+                       type='text' 
+                       name='something[interesting]'/>"
+}}}
 === url_for ===
 
 
