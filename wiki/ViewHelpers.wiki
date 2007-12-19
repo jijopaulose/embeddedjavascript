@@ -32,7 +32,11 @@ form_tag_end()
 
 === hidden_field_tag( name,  value,  html_options) ===
 {{{
-hidden_field_tag('something[interesting]', 5)
+hidden_field_tag('something[interesting]', 5) => 
+              "<input id=\'something[interesting]\' 
+                      value=\'5\' 
+                      type=\'hidden\' 
+                      name=\'something[interesting]\'/>"
 }}}
 
 === img_tag ===
