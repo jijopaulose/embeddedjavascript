@@ -95,10 +95,11 @@ Just like link_to if the condition is true. If condition is false it returns nam
 === link_to_unless(condition, name, url, html_options, block) ===
 Just like link_to if the condition is false. If condition is true it returns name.
 
-=== link_to_unless_current ===
-
+=== link_to_unless_current(name, url, html_options, block) ===
+Just like link_to if the url passed in matches the current pages url.  Returns name if otherwise.
 
 === password_field_tag ===
+Returns a password field.
 {{{
 password_field_tag('something[interesting]', 5) => 
 
@@ -110,6 +111,7 @@ password_field_tag('something[interesting]', 5) =>
 
 
 === select_tag ===
+Returns a select tag.
 {{{
 var choices = [ {value: 1,    text: 'First Choice' }, 
                 {value: 2,    text: 'Second Choice'},
@@ -125,10 +127,26 @@ select_tag('mySelectElement', 2,  choices) =>
 
 
 === single_tag_for ===
+
+Helper for creating a single tag like <br/>
+
 === start_tag_for ===
+
+Helper for creating a beginning tag like <div>
+
 === submit_tag ===
+Creates a submit tag.
+{{{
+submit_tag('Submit') => "<input type=\'submit\' value=\'Submit\' />"
+}}}
 === tag ===
+
+Creates a general tag.
+
 === tag_end ===
+
+Creates an end tag like </div>
+
 === text_area_tag ===
 {{{
 text_area_tag('task[description]', 'Here is some text.\nA new line.') =>
@@ -151,7 +169,4 @@ text_field_tag('something[interesting]', 5) =>
 
 === url_for ===
 
-
-
-
-== link_to_unless ==
+returns a string that changes the url.
