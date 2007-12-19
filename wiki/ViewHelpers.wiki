@@ -17,7 +17,7 @@ date_tag('Installation[date]', new Date(1982, 10,20) )
 Creates a start form tag.
 {{{
 form_tag('/myaction',{multipart: true}) 
-}}}
+ }}}
 
 === end_form_tag() === 
 Creates a start form tag.
@@ -56,10 +56,16 @@ password_field_tag('something[interesting]', 5) => "<input id='something[interes
 }}}
 === select_tag ===
 {{{
-var choices = [ {value: 1,      text: 'First Choice' }, 
-                  {value: 2,      text: 'Second Choice'},
-                  {value: '3',    text: 'Third Choice'}  ]
-    select_tag('mySelectElement', 2,  choices) => "<select id='mySelectElement' value='2' name='mySelectElement' ><option value='1' >First Choice</option><option value='2' selected='selected' >Second Choice</option><option value='3' >Third Choice</option></select>"
+var choices = [ {value: 1,    text: 'First Choice' }, 
+                {value: 2,    text: 'Second Choice'},
+                {value: 3,    text: 'Third Choice'}  ]
+select_tag('mySelectElement', 2,  choices) => 
+
+               "<select id='mySelectElement' value='2' name='mySelectElement'>
+                   <option value='1' >First Choice</option>
+                   <option value='2' selected='selected'>Second Choice</option>
+                   <option value='3'>Third Choice</option>
+                </select>"
 }}}
 === single_tag_for ===
 === start_tag_for ===
