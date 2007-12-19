@@ -80,7 +80,12 @@ submit_link_to('holla', '/new/location') =>
 === link_to_unless_current ===
 === password_field_tag ===
 {{{
-password_field_tag('something[interesting]', 5) => "<input id='something[interesting]' value='5' type='password' name='something[interesting]' />"
+password_field_tag('something[interesting]', 5) => 
+
+              "<input id='something[interesting]' 
+                      value='5' 
+                      type='password' 
+                      name='something[interesting]'/>"
 }}}
 === select_tag ===
 {{{
