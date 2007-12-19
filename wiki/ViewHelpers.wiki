@@ -45,7 +45,11 @@ img_tag('/some.png', 'something') => "<img src='/some.png' alt='something' />"
 }}}
 === input_field_tag ===
 {{{
-input_field_tag('something[interesting]', 5) => "<input id='something[interesting]' value='5' type='text' name='something[interesting]' />"
+input_field_tag('something[interesting]', 5) => 
+              "<input id='something[interesting]' 
+                      value='5' 
+                      type='text' 
+                      name='something[interesting]'/>"
 }}}
 === is_current_page ===
 Returns true if the url equals location.href or location.pathname, false if otherwise.
