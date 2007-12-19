@@ -31,8 +31,10 @@ form_tag_end()
 }}}
 
 === hidden_field_tag( name,  value,  html_options) ===
+Creates a hidden field.
 {{{
 hidden_field_tag('something[interesting]', 5) => 
+
               "<input id=\'something[interesting]\' 
                       value=\'5\' 
                       type=\'hidden\' 
@@ -40,12 +42,15 @@ hidden_field_tag('something[interesting]', 5) =>
 }}}
 
 === img_tag ===
+Creates an image tag.
 {{{
 img_tag('/some.png', 'something') => "<img src='/some.png' alt='something' />"
 }}}
 === input_field_tag ===
+Creates an input field tag.
 {{{
 input_field_tag('something[interesting]', 5) => 
+
               "<input id='something[interesting]' 
                       value='5' 
                       type='text' 
@@ -57,12 +62,18 @@ Returns true if the url equals location.href or location.pathname, false if othe
 is_current_page('yahoo.com') => false
 }}}
 === link_to ===
+Creates a link to another page.
 {{{
 link_to('hello world', '/something/here') => "<a href='/something/here' >hello world</a>"
 }}}
 === submit_link_to ===
+Creates a submit button that links to another page.
 {{{
-submit_link_to('holla', '/new/location') => "<input onclick='window.location=\"/new/location\";return false;' value='holla' type='submit' >"
+submit_link_to('holla', '/new/location') => 
+
+              "<input onclick='window.location=\"/new/location\";return false;' 
+                      value='holla' 
+                      type='submit' />"
 }}}
 === link_to_if ===
 === link_to_unless ===
