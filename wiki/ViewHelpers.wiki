@@ -10,24 +10,24 @@ EJS provides view helpers for common tasks.  These helpers are very similar to t
 === date_tag(name, value, html_options) ===
 Creates a date tag
 {{{
-View.date_tag('Installation[date]', new Date(1982, 10,20) )
+date_tag('Installation[date]', new Date(1982, 10,20) )
 }}}
 
 === form_tag(action, html_options)  === 
 Creates a start form tag.
 {{{
-View.form_tag('/myaction',{multipart: true}) 
+form_tag('/myaction',{multipart: true}) 
 }}}
 
 === end_form_tag() === 
 Creates a start form tag.
 {{{
-View.form_tag_end()
+form_tag_end()
 }}}
 
 === hidden_field_tag( name,  value,  html_options) ===
 {{{
-View.hidden_field_tag('something[interesting]', 5)
+hidden_field_tag('something[interesting]', 5)
 }}}
 
 === img_tag ===
