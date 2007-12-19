@@ -18,17 +18,20 @@ Creates a date tag
 date_tag('Installation[date]', new Date(1982, 10,20) )
 }}}
 
+
 === form_tag(action, html_options)  === 
 Creates a start form tag.
 {{{
 form_tag('/myaction',{multipart: true}) 
  }}}
 
+
 === end_form_tag() === 
 Creates a start form tag.
 {{{
 form_tag_end()
 }}}
+
 
 === hidden_field_tag( name,  value,  html_options) ===
 Creates a hidden field.
@@ -41,11 +44,14 @@ hidden_field_tag('something[interesting]', 5) =>
                       name=\'something[interesting]\'/>"
 }}}
 
+
 === img_tag ===
 Creates an image tag.
 {{{
 img_tag('/some.png', 'something') => "<img src='/some.png' alt='something' />"
 }}}
+
+
 === input_field_tag ===
 Creates an input field tag.
 {{{
@@ -56,16 +62,22 @@ input_field_tag('something[interesting]', 5) =>
                       type='text' 
                       name='something[interesting]'/>"
 }}}
+
+
 === is_current_page ===
 Returns true if the url equals location.href or location.pathname, false if otherwise.
 {{{
 is_current_page('yahoo.com') => false
 }}}
+
+
 === link_to ===
 Creates a link to another page.
 {{{
 link_to('hello world', '/something/here') => "<a href='/something/here' >hello world</a>"
 }}}
+
+
 === submit_link_to ===
 Creates a submit button that links to another page.
 {{{
@@ -75,6 +87,8 @@ submit_link_to('holla', '/new/location') =>
                       value='holla' 
                       type='submit' />"
 }}}
+
+
 === link_to_if(condition, name, url, html_options, post, block) ===
 Just like link_to if the condition is true. If condition is false it returns name.
 
@@ -82,6 +96,8 @@ Just like link_to if the condition is true. If condition is false it returns nam
 Just like link_to if the condition is false. If condition is true it returns name.
 
 === link_to_unless_current ===
+
+
 === password_field_tag ===
 {{{
 password_field_tag('something[interesting]', 5) => 
@@ -91,6 +107,8 @@ password_field_tag('something[interesting]', 5) =>
                       type='password' 
                       name='something[interesting]'/>"
 }}}
+
+
 === select_tag ===
 {{{
 var choices = [ {value: 1,    text: 'First Choice' }, 
@@ -104,6 +122,8 @@ select_tag('mySelectElement', 2,  choices) =>
                    <option value='3'>Third Choice</option>
                 </select>"
 }}}
+
+
 === single_tag_for ===
 === start_tag_for ===
 === submit_tag ===
@@ -117,6 +137,8 @@ text_area_tag('task[description]', 'Here is some text.\nA new line.') =>
                           cols='50' 
                           rows='4' >Here is some text.\nA new line.</textarea>"
 }}}
+
+
 === text_field_tag ===
 {{{
 text_field_tag('something[interesting]', 5) => 
@@ -125,6 +147,8 @@ text_field_tag('something[interesting]', 5) =>
                        type='text' 
                        name='something[interesting]'/>"
 }}}
+
+
 === url_for ===
 
 
