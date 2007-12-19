@@ -75,8 +75,12 @@ submit_link_to('holla', '/new/location') =>
                       value='holla' 
                       type='submit' />"
 }}}
-=== link_to_if ===
-=== link_to_unless ===
+=== link_to_if(condition, name, url, html_options, post, block) ===
+Just like link_to if the condition is true. If condition is false it returns name.
+
+=== link_to_unless(condition, name, url, html_options, block) ===
+Just like link_to if the condition is false. If condition is true it returns name.
+
 === link_to_unless_current ===
 === password_field_tag ===
 {{{
