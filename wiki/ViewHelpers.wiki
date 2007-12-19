@@ -73,6 +73,13 @@ select_tag('mySelectElement', 2,  choices) =>
 === tag ===
 === tag_end ===
 === text_area_tag ===
+{{{
+text_area_tag('task[description]', 'Here is some text.\nA new line.') =>
+               "<textarea id='task[description]' 
+                          name='task[description]' 
+                          cols='50' 
+                          rows='4' >Here is some text.\nA new line.</textarea>"
+}}}
 === text_field_tag ===
 === url_for ===
 
