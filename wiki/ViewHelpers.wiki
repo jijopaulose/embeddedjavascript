@@ -51,7 +51,16 @@ submit_link_to('holla', '/new/location') => "<input onclick='window.location=\"/
 === link_to_unless ===
 === link_to_unless_current ===
 === password_field_tag ===
+{{{
+password_field_tag('something[interesting]', 5) => "<input id='something[interesting]' value='5' type='password' name='something[interesting]' />"
+}}}
 === select_tag ===
+{{{
+var choices = [ {value: 1,      text: 'First Choice' }, 
+                  {value: 2,      text: 'Second Choice'},
+                  {value: '3',    text: 'Third Choice'}  ]
+    select_tag('mySelectElement', 2,  choices) => "<select id='mySelectElement' value='2' name='mySelectElement' ><option value='1' >First Choice</option><option value='2' selected='selected' >Second Choice</option><option value='3' >Third Choice</option></select>"
+}}}
 === single_tag_for ===
 === start_tag_for ===
 === submit_tag ===
