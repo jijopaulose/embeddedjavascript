@@ -4,7 +4,7 @@
 
 EJS provides view helpers for common tasks.  These helpers are very similar to those found in the Ruby On Rails framework.
 
-|| date_tag || form_tag_end
+|| date_tag || form_tag_end ||
 
 
 = Details =
