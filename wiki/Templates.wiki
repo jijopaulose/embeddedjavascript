@@ -1,17 +1,27 @@
-#summary How to use templates with ejs.
+#summary How to use templates with EJS.
 
 = Introduction =
 
-Templates let you load ejs files that are automatically compiled and cached.  You don't have to build template strings or insert templates in the page's html.
+EJS provides a lot of flexibility for using JavaScript templates.  This article documents EJS's template API.
 
-= Example =
+EJS is typically used by loading a template and rendering it with data.
+
+= Loading a template =
+
+Load a template by creating a new EJS template:
 {{{
-var templates = new Templates()
-var o1 = {animals: ['sloth', 'bear', 'monkey']};
-var o2 = {animals: ['tiger', 'dog', 'elephant']};
-var result1 = templates.find('templates/test.ejs').process(o1)
-var result2 = templates.find('templates/test.ejs').process(o2)
+template = new EJS({url: '/mytemplate.ejs'})
 }}}
+options is a hash that can include the following attributes:
+
+  * url {string} - loads the template from a file
+  * text {string} - uses the provided text as 
+  * element {string or element} - 
+  * type {string} (optional) - '<' or '[', default is '<', except for loading a template from an element.
+  * name {string} (optional) - an optional name that is used for caching.  This defaults to the element ID or URL provided.
+  * cache {boolean} (optional) - defaults to true.  True if you want to enable caching of templates, false if otherwise.
+
+Once a template is loaded
 
 = Use =
 
