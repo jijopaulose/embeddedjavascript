@@ -49,5 +49,9 @@ Updates an element with the result of the template.
 
 === Examples ===
 {{{
-f = new EJS({url: '/mytemplate.ejs'}).update('')
+f = new EJS({url: '/mytemplate.ejs'}).update('my_element')
+
+new EJS({url: '/mytemplate.ejs'}).update('my_element', '/data.json')
+
+new EJS({url: '/mytemplate.ejs'}).update('my_element', {supplies: ['mop']})
 }}}
