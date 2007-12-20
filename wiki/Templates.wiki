@@ -10,22 +10,38 @@ EJS is typically used by loading a template and rendering it with data.
 
 Load a template by creating a new EJS template.  Templates are cached by default.
 
-== Example ==
+=== Example ===
 {{{
 template = new EJS({url: '/mytemplate.ejs'})
 }}}
 options is a hash that can include the following attributes:
 
-  * url {string} - loads the template from a file
-  * text {string} - uses the provided text as 
-  * element {string or element} - 
+  * url {string} - loads a template from a file
+  * text {string} - uses the provided text as the template
+  * element {string or element} - loads a template from the innerHTML or value of the element.
   * type {string} (optional) - '<' or '[', default is '<', except for loading a template from an element.
   * name {string} (optional) - an optional name that is used for caching.  This defaults to the element ID or URL provided.
   * cache {boolean} (optional) - defaults to true.  True if you want to enable caching of templates, false if otherwise.
 
-Once a template is loaded
 
-= Use =
+= Rendering =
+
+There are 2 ways to render a template.  The first method, render, simply returns text.  Other method, update, is used to update the inner HTML of an element.
+
+== render(data)
+Renders the template with the provided data.
+{{{
+  html = new EJS({url: '/template.ejs'}).render(data)
+}}}
+
+== update(element, url_or_data)
+element - the element you want updated
+
+url_or_data
+  {null}
+  {string}
+  {object}
+
 
 First, you have to create a place to store the templates:
 
