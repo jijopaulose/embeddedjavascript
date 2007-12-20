@@ -28,39 +28,16 @@ options is a hash that can include the following attributes:
 
 There are 2 ways to render a template.  The first method, render, simply returns text.  Other method, update, is used to update the inner HTML of an element.
 
-== render(data)
+== render(data) ==
 Renders the template with the provided data.
 {{{
   html = new EJS({url: '/template.ejs'}).render(data)
 }}}
 
-== update(element, url_or_data)
+== update(element, url_or_data) ==
 element - the element you want updated
 
 url_or_data
   {null}
   {string}
   {object}
-
-
-First, you have to create a place to store the templates:
-
-{{{
-var templates = new Templates();
-}}}
-
-Next, load the compiled template (EjsCompiler):
-
-{{{
-var template = templates.find('templates/test.ejs')
-}}}
-
-Finally, render the template with data by passing an object:
-
-{{{
-var result = template.process( {title: 'hello world', description: 'render this data'} )
-}}}
-or evaluating the compiled template
-{{{
-var result = eval(template.out)
-}}}
