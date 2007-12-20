@@ -8,7 +8,9 @@ EJS is typically used by loading a template and rendering it with data.
 
 = Loading a template =
 
-Load a template by creating a new EJS template:
+Load a template by creating a new EJS template.  Templates are cached by default.
+
+== Example ==
 {{{
 template = new EJS({url: '/mytemplate.ejs'})
 }}}
